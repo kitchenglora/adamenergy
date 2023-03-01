@@ -1,38 +1,301 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  margin: 50px 160px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 26px 22px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+/* Header */
 .App {
+  background: hsl(211, 15%, 58%);
+  min-height: 750vh;
+}
+
+.header {
+  background-color: #ffffff;
+  /* margin: 0px 135px; */
+  /* position: fixed; */
+  /* border-radius: 9px; */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: inherit;
+  position: STICKY;
+  top: 0px;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.header img {
+  width: 10rem;
+  height: 62px;
+  padding: 13px 9px;
+  margin: 8px;
+}
+
+.header span {
+  font-size: 30px;
+}
+
+/* Company Information */
+
+label {
+  display: block;
+}
+
+.compnayInfo-leftSide {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 9px 18px;
+}
+
+.text {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.number {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* input[type=email] {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.compInfoText {
+  width: 100%;
+}
+
+.compInfoRightText {
+  /* margin-right: 194px; */
+  width: 170%;
+}
+
+.compnayInfo-rightSide {
+  margin-right: 179px;
+}
+
+/*company Structure  */
+.leftcompStructText {
+  width: 216%;
+}
+
+.compnayStruct-rightSide {
+  margin-right: 138px;
+}
+
+.rightcompStructText {
+  width: 145%;
+  margin-right: 89px;
+}
+
+/* companyBankDetails-container */
+.companyBankDetails-container {
+  margin: 50px 135px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 26px 22px;
+  overflow: hidden;
+}
+
+.leftSideBankDetails {
+  width: 205%;
+}
+
+.rightSideBankDetails {
+  width: 147%;
+}
+
+.bankDetails-rightSide {
+  margin-right: 14%;
+}
+
+/* Shareholder  */
+.shareHolder-leftSide {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.shareHolder-Middlecontainer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sh-number {
+  width: 50%;
+  padding: 16px 6px;
+  margin: 11px auto;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Compnay Contact Details */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.compnayContactDetails-leftSide {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.compnayContactDetails-rightText {
+  width: 100%;
+  margin-right: 218px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Trade Reference */
+.tradeRefernce-Rightcontainer {
+  margin-left: 107px;
+}
+
+.tradeRefernce-leftSide {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* kyc DOCUMENTS */
+input[type="file"] {
+  display: none;
+}
+
+.kycFile {
+  display: inline-block;
+  background: rgba(0, 194, 255, 0.07);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 7px 16px;
+}
+
+.docs-container {
+  margin: 17px 10px;
+  flex: 1;
+}
+
+.head-docsContainer {
+  margin: 8px 3px;
+}
+
+.trade-container {
+  display: flex;
+}
+
+.trade-and-reg {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.websiteURL-container {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.webURL {
+  margin: 41px 13rem;
+}
+
+.webURL input {
+  width: 395px;
+
+  padding: 10px;
+}
+
+.or-container {
+  margin: auto;
+}
+
+.docs-container span {
+  padding: 0px 6px;
+}
+
+/* Declaration Container */
+.declaration-container {
+  padding: 20px 17px;
+  text-align: justify;
+}
+
+.declaration-container h2 {
+  margin: 12px 1px;
+}
+
+.declaration-container span {
+  font-weight: bolder;
+  line-height: 23px;
+}
+
+.signature-container {
+  margin: 10px 20px;
+}
+
+.signature-container input {
+  padding: 13px 9px;
+  width: 31%;
+}
+
+.signature-container h4 {
+  margin: 7px 80px;
+}
+
+/* Errors */
+.error {
+  color: red;
+}
+.phone {
+  /* padding:6%; */
+  padding: 9px;
+  border-radius: 7px;
+}
+.PhoneInputInput {
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit-but-container{
+  text-align: center;
+      padding: 13px;
+
+}
+.submit-but{
+  padding: 11px 25px;
+    background-color: #18C981;
+    border: navajowhite;
+    color: #FFFFFF;
+    FONT-SIZE: 20px;
+    border-radius: 10px;
 }
